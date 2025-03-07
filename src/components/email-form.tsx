@@ -19,7 +19,6 @@ export function EmailForm() {
                 success: result.success,
                 message: result.message,
             });
-            // Reset form on success
             if (result.success) {
                 setName("");
                 setEmail("");
