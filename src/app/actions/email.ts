@@ -23,7 +23,8 @@ export async function sendEmail(data: EmailData) {
             message: "Name and email are required",
         }
     }
-    const {data: resendData, error} = await resend.emails.send({
+    const {data: resendData, error}
+    = await resend.emails.send({
         from: "onboarding@resend.dev",
         to: email,
         subject: `Hallo ${name}, we sturen je een mail.`,
